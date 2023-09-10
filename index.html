@@ -6,24 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="style.css" />
-
-    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png" />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+      href="style.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
@@ -35,7 +24,8 @@
             srcset="./images/image-product-mobile.jpg" />
           <img
             class="image"
-            src="./images/image-product-desktop.jpg" />
+            src="./images/image-product-desktop.jpg"
+            alt="Product Image" />
         </picture>
         <div class="information">
           <h1 class="category">PERFUME</h1>
@@ -45,11 +35,13 @@
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <p class="price">
-            <span class="cost"> $149.99 </span>
-            <span class="after-cost"> $169,99 </span>
+            <span class="cost">$149.99</span>
+            <span class="after-cost">$169.99</span>
           </p>
           <button class="button-add-cart">
-            <embed src="./images/icon-cart.svg" />
+            <img
+              src="./images/icon-cart.svg"
+              alt="Add to Cart" />
             Add to Cart
           </button>
         </div>
