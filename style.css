@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  color: black;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  & a {
+    font-size: inherit;
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  .image {
+    .desktop {
+      width: 20rem;
+      border: none;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 40ch;
+
+    .name,
+    .cost {
+      font-family: 'Fraunces', serif;
+    }
+
+    .category,
+    .description,
+    .button-add-cart {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .category {
+      font-weight: 500;
+      letter-spacing: 0.25em;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      line-height: 2.25rem;
+      color: var(--very-dark-blue);
+      margin: 1rem 0;
+    }
+
+    .description {
+      line-height: 1.5rem;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 1.5rem 0;
+
+      .cost {
+        font-size: 2rem;
+        color: var(--dark-cyan);
+      }
+
+      .after-cost {
+        text-decoration: line-through;
+      }
+    }
+
+    .button-add-cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      background-color: var(--dark-cyan);
+      color: var(--white);
+
+      font-weight: 700;
+
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  }
+}
